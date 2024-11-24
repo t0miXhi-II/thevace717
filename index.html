@@ -126,6 +126,7 @@
 						<p>Or send us a quick message and we will be in touch.</p>
 					</header>
 					<div class="box">
+						<form method="post" action="https://api.emailjs.com/api/v1.0/email/send-form">
 							<div class="fields">
 								<div class="field half">
 									<input id="senders_name" type="text" name="name" placeholder="Name" required />
@@ -135,11 +136,14 @@
 									<input id="senders_email" type="text" name="email" placeholder="Email" required />
 								</div>
 								<br>
-								<div class="field half">
+								<div class="field">
 									<input id="email_message" type="text" name="message" placeholder="Message" rows="6" style="height: 150px;" required />
 								</div>
 								<br>
 							</div>
+							
+						</form>
+						
 						<button id="send_email_message2" type="submit" style="height: 80px; width: 220px; font-size: 20px;">Send Message</button>
 					</div>
 				</div>
